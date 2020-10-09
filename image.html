@@ -1,20 +1,29 @@
 <!DOCTYPE html> 
 <head>
 <title>
-    Google Clone
+    Image Query
 </title>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap"  rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="styles.css">
 <style>
+    .subtext{
+        display: flex;
+    flex: 1;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.5em;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: center;
+    }
 </style>
 </head>
 <body>
 
     <span class="top">
 
-    <form id="img" action="/image">
-    <input type="submit" value="Image Search"/>
+    <form id="img" action="/">
+    <input type="submit" value="Return to basic search"/>
     </form>
 
     <form action="/advance">
@@ -31,10 +40,12 @@
         <h1 class="fifth">l</h1>
         <h1 class="sixth">e</h1>
     </div>
-    
+    <div class="subtext">
+        <h3 class="first">Images</h3>
+    </div>
     <div>
-            <form action="https://google.com/search">
-                <input id="searchbar" type="text" placeholder="What would you like to search?"name="q">
+            <form action="https://google.com/images">
+                <input id="searchbar" type="text" placeholder="What would you like to search?" name="q">
                 <input id="buttons" type="submit" value="Search">
             </form>
     </div>

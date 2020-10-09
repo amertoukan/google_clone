@@ -1,0 +1,72 @@
+<!DOCTYPE html> 
+<head>
+<title>
+    Image Query
+</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap"  rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+<style>
+    .subtext{
+        display: flex;
+    flex: 1;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.5em;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: center;
+    }
+
+    .row{
+        display: flex;
+        flex-direction: row;
+        margin: 15px;
+    }
+</style>
+</head>
+<body>
+
+    <span class="top">
+
+    <form id="img" action="/">
+    <input type="submit" value="Go home"/>
+    </form>
+    </span>
+    <div class="subtext">
+        <h3 class="first">Advanced Search</h3>
+    </div>
+    <span class = "row">
+        <form class='row' action="https://google.com/search">
+            <input id="searchbar" type="text" placeholder="All these words" name="as_epq">
+            <input id="buttons" type="submit" value="Search">
+        </form>
+    </span>
+    
+
+    <span class = "row">
+        <form class='row' action="https://google.com/search">
+            <input id="searchbar" type="text" placeholder="This exact word or phrase" name="as_epq">
+            <input id="buttons" type="submit" value="Search">
+        </form>
+    </span>
+
+
+
+    <span class = "row">
+        <form class='row' action="https://google.com/search">
+            <input id="searchbar" type="text" placeholder="Any of these words" name="as_oq">
+            <input id="buttons" type="submit" value="Search">
+        </form>
+    </span>
+
+
+    <span class = "row">
+        <form class='row' action="https://google.com/search">
+            <input id="searchbar" type="text" placeholder="None of these words" name="as_eq">
+            <input id="buttons" type="submit" value="Search">
+        </form>
+    </span>
+
+
+    
+</body>
